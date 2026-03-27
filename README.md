@@ -203,6 +203,8 @@ If you are using FreeBSD, the commands change slightly:
 
 There will be no output, but the key will be inserted into `sh.cf` and `sh_hbl.cf` in all the needed places.
 
+If you have an HBL enabled key, and assuming the *configuration directory* is `/etc/mail/spamassassin` do the following:
+
 Edit `sh.pre` with your editor of choice, and look at the first line:
 
 ```
@@ -214,8 +216,6 @@ You will need to replace `<config_directory>` with your actual *configuration di
 ```
 	loadplugin       Mail::SpamAssassin::Plugin::SH /etc/mail/spamassassin/SH.pm
 ```
-
-If you have an HBL enabled key, and assuming the *configuration directory* is `/etc/mail/spamassassin` do the following:
 
 ```
 	# cp SH.pm /etc/mail/spamassassin
@@ -281,6 +281,8 @@ If you are using FreeBSD, the commands change slightly:
 
 There will be no output, but the key will be inserted into `sh.cf` and `sh_hbl.cf` in all the needed places.
 
+If you have an HBL enabled key, and assuming the *configuration directory* is `/etc/mail/spamassassin` do the following:
+
 Edit `sh.pre` with your editor of choice, and look at the first line:
 
 ```
@@ -292,8 +294,6 @@ You will need to replace `<config_directory>` with your actual *configuration di
 ```
 	loadplugin       Mail::SpamAssassin::Plugin::SH /etc/mail/spamassassin/SH.pm
 ```
-
-If you have an HBL enabled key, and assuming the *configuration directory* is `/etc/mail/spamassassin` do the following:
 
 ```
 	# cp SH.pm /etc/mail/spamassassin
